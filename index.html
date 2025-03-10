@@ -3,7 +3,6 @@
 <head>
     <title>My Projects</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="banner">
@@ -17,12 +16,30 @@
 
         <br><br>I have always had a love for astronomy and the crafts we send into space, which inspired me to join the Society of Aeronautics and Rocketry (SOAR). Through SOAR, I’m participating in the NASA Student Launch (NSL), combining my interest in technology with my passion for exploring the universe.
         
-        <br><br>Looking ahead, my goal after earning my bachelor’s degree is to pursue a master’s in Computer Science and eventually work for NASA, contributing to advancements in space exploration.
+        <br><br>Looking ahead, my goals after earning my bachelor’s degree are to pursue a master’s in Computer Science and eventually work for NASA, contributing to advancements in space exploration.
     </p>
     <h2>My Projects</h2>
     <ul>
-        <li>APRS Data Transmission</li>
+        <li>Society of Aeronautics and Rocketry(SOAR)</li>
         <li>Following Robot</li>
     </ul>
+    <h2>More Info</h2>
+    <section class="more-info">
+        <div class="info-box" onclick="expandbox(this)" id="box1">
+            <img src="images/SOAR_fire.jpg" alt="SOAR Fire">
+            <h3>SOAR</h3>
+            <div class="details">
+                <p>SOAR is a student organization at USF that focuses on rocketry and aeronautics. I am currently participating in the NASA Student Launch (NSL) with them.</p>
+            </div>
+        </div>
+        <div class="info-box" onclick="expandbox(this)" id="box2">
+            <img src="images/arduino.jpg" alt="Following Robot">
+            <h3>Following Robot</h3>
+            <div class="details">
+                <p>For a current class I'm taking, Foundations of Engineering, I am working with a group of other students to make a following robot.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

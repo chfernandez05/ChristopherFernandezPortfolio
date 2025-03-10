@@ -11,7 +11,6 @@
     padding: 10px 0;
     font-size: 24px;
     font-weight: bold;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -20,6 +19,89 @@
 p {
     margin-right: 100px;
 }
+.more-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: f4f4f4;;
+}
+
+.info-box {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-origin: center center;
+}
+
+.info-box img {
+    
+    height: 60%;
+    width: auto;
+    transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+.info-box h3 {
+    font-size: 36px;
+    color:darkgreen;
+    margin: 10px 0;
+    transition: font-size 0.5s ease;
+    position: relative;
+}
+
+.info-box p {
+    font-size: 5px;
+    color: #555;
+}
+
+.info-box .details {
+    display: none;
+    margin-top: 10px;
+}
+
+.info-box.expanded {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: scale(2) translateY(-50%);
+    z-index: 10;
+    position: relative;
+}
+
+.info-box.expanded .details {
+    display: block;
+}
+
+.info-box.expanded img{
+    height: 20%;
+    width: auto;
+    transform: scale(0.75);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.info-box.expanded h3 {
+    font-size: 16px;
+    position: absolute;
+    transform: scale(0.75);
+    top: 32px;
+    left: 4px;
+}
+
 body {
     font-family: consolas, "lucidia Console", monospace;
     text-align: left;
